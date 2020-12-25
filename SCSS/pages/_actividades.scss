@@ -1,7 +1,7 @@
 .galeria__actividades {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 7%;
+    grid-row-gap: 5%;
     margin-top: 1rem;
     text-align: center;
     justify-items: center;
@@ -12,14 +12,14 @@
     }
     @media (max-width: 767px) {
         grid-template-columns: 1fr;
-        grid-row-gap: 2%;
+        grid-row-gap: 0.5%;
     }
 
     div {
-        width: 320px;
+        width: 350px;
 
         img {
-            padding: 1.875rem 0;
+            padding: 1.875rem 0;;
 
             @media (max-width: 767px) {
                 margin-bottom: 0;
@@ -29,7 +29,7 @@
     }
     &.galeria__actividades--aventura {
         grid-template-rows: repeat(2, 1fr);
-        margin-bottom: 9.375rem;
+        margin-bottom: 7.5rem;
 
         @media (min-width: 768px) and (max-width: 1024px) {
             grid-template-rows: repeat(3, 1fr);
@@ -37,21 +37,25 @@
         }
         @media (max-width: 767px) {
             grid-template-rows: repeat(6, 1fr);
-            margin-bottom: 18.75rem;
+            margin-bottom: 7.5rem;
         }
     }
     &.galeria__actividades--natycul {
         grid-template-rows: 1fr;
-        margin-bottom: 6.25rem;
+        margin-bottom: 3.125rem;
 
         @media (min-width: 768px) and (max-width: 1024px) {
             margin-bottom: 8.125rem;
         }
         @media (max-width: 767px) {
             grid-template-rows: repeat(3, 1fr);
-            margin-bottom: 6.25rem;
+            margin-bottom: 4.5rem;
         }
     }
+}
+
+.titulo__actividades-cultural{
+margin-top: 3.875rem;
 }
 
 #costaGrande {
