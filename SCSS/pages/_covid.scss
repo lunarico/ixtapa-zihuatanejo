@@ -1,0 +1,26 @@
+.covid__indicaciones{
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1.563rem;
+        width: 80%;
+
+        @media screen and (max-width: 767px) {
+            font-size: 1.875rem;
+            width: 90%;
+        }
+    }
+    ul {
+        width: ($medida-total/2)+10%;
+
+        @media screen and (max-width: 767px) {
+            width: ($medida-total)-20%;
+        }
+        li {
+            color: $light-green;
+            font: $font__pages--text;
+            letter-spacing: 0.031rem;
+            line-height: 1.875rem;
+            padding-bottom: 1.25rem;
+        }
+    }
+}

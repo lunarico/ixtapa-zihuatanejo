@@ -1,0 +1,36 @@
+.navbar-nav {
+    width: $medida-total;
+}
+
+.navbar-light {
+	.navbar-toggler {
+		border-color: $dark-blue;
+	}
+	.navbar-nav {
+		.nav-link {
+			color: $dark-blue;
+			&:hover {
+				color: $light-green;
+			}
+		}
+	}
+}
+
+#icon-alojamiento {
+    font-size: 1.313rem;
+}
+#icon-actividades {
+    font-size: 1.75rem;
+}
+
+/*Navbar Responsive*/
+@media only screen and (max-width: 991px) {
+    #link-inicio {
+        display: none;
+    }
+    .navbar__sublist-center {
+        margin-top: 1.25rem;
+        margin-right: 170%;
+    }
+}
+

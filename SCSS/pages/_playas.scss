@@ -1,0 +1,30 @@
+.text__playas {
+    margin-top: 6.25rem;
+
+    @media (min-width: 768px) {
+        font-size: 1.25rem;
+    }
+}
+
+.galeria__playas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 7%;
+    justify-items: center;
+    margin-bottom: ($medida-total/5)-5%;
+    margin-top:$medida-total/20;
+    text-align: center;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        margin-bottom: 5%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    @media (max-width: 767px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(13, 1fr);
+        grid-row-gap: 1%;
+        margin-bottom: $medida-total/2;
+    }
+}

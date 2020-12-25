@@ -1,0 +1,59 @@
+.galeria__actividades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 7%;
+    margin-top: 1rem;
+    text-align: center;
+    justify-items: center;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 3.125rem;
+    }
+    @media (max-width: 767px) {
+        grid-template-columns: 1fr;
+        grid-row-gap: 2%;
+    }
+
+    div {
+        width: 320px;
+
+        img {
+            padding: 1.875rem 0;
+
+            @media (max-width: 767px) {
+                margin-bottom: 0;
+                padding: 1rem 0;
+            }
+        }
+    }
+    &.galeria__actividades--aventura {
+        grid-template-rows: repeat(2, 1fr);
+        margin-bottom: 9.375rem;
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+            grid-template-rows: repeat(3, 1fr);
+            margin-bottom: 15.625rem;
+        }
+        @media (max-width: 767px) {
+            grid-template-rows: repeat(6, 1fr);
+            margin-bottom: 18.75rem;
+        }
+    }
+    &.galeria__actividades--natycul {
+        grid-template-rows: 1fr;
+        margin-bottom: 6.25rem;
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+            margin-bottom: 8.125rem;
+        }
+        @media (max-width: 767px) {
+            grid-template-rows: repeat(3, 1fr);
+            margin-bottom: 6.25rem;
+        }
+    }
+}
+
+#costaGrande {
+    padding-top: 0;
+}

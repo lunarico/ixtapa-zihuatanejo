@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Kurale&family=Nunito:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding:0;
+}
+body {
+    background-color: #2d3836;
+}
+html,
+body {
+  height: 100%;
+}
+
+/***************************************
+****************GENERAL*****************
+***************************************/
+
+h2 {
+    color: #d2e603;
+    font: 600 3.75rem 'Nunito', sans-serif;
+    letter-spacing: 0.313rem;
+    margin-top: 6.25rem;
+    margin-bottom: 3.125rem;
+}
+h3 {
+    color: #d2e603;
+    font: 600 1.375rem 'Nunito', sans-serif;
+    letter-spacing: 0.063rem;
+    text-align: center;
+}
+p {
+    color: #eff48e;
+    font: 300 1rem 'Nunito', sans-serif;
+    letter-spacing: 0.044rem;
+}
+a {
+    color:#2d3836;
+}
+a:hover {
+    color: #eff48e;
+    text-decoration: none;
+}
+a h4 {
+    color: #eff48e;
+    font: 600 1.25rem 'Nunito', sans-serif;
+    text-align: center;
+    }
+
+.opacidad {
+    opacity: 0.7;
+}
+
+
+
+
+@media only screen and (max-width: 767px) {
+    h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/**************************************
+*****************HEADER****************
+***************************************/
+
+header {
+    background-color: #2ec1ac;
+    position: sticky;
+    top:0;
+    z-index: 2;
+}
+
+/************************************
+*****************LOGO****************
+************************************/
+
+.logo {
+    margin-top: 0.125rem;
+    margin-left: 3%;
+    padding: 0;
+}
+header h1 {
+    color: #2d3836;
+    font: 600 1.125rem 'Kurale', serif;
+    letter-spacing: 0.063rem;
+    margin-bottom: 0;
+}
+
+/***********************************
+********BARRA DE NAVEGACIÓN*********
+***********************************/
+
+.navbar-light .navbar-toggler {
+    border-color: #2d3836;
+}
+.navbar-nav {
+    width: 100%;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #2d3836;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #eff48e;
+}
+ul li a {
+    font: 700 1.25rem 'Nunito', sans-serif;
+}
+header ul li i {
+    font-size: 1.375rem;
+    margin-right: 0.438rem;
+}
+#alojamientoIcon {
+    font-size: 1.313rem;
+}
+#actividadesIcon {
+    font-size: 1.75rem;
+}
+@media only screen and (max-width: 991px) {
+    #inicio {
+        display: none;
+    }
+    .navIxtapa {
+        margin-top: 1.25rem;
+        margin-right: 170%;
+    }
+}
+
+/**********************************
+**************INDEX****************
+**********************************/
+
+#bodyIndex {
+    background:url("../img/ixtapa1.jpg");
+  }
+#page-content {
+    flex: 1 0 auto;
+  }
+.backgroundIndex h2 {
+    color:#2d3836;
+    font: 600 1.875rem 'Nunito', sans-serif;
+    letter-spacing: 0.031rem;
+    margin-top: 0;
+    margin-bottom: 0.7rem;
+}
+.backgroundIndex h3 {
+    color: #2d3836;
+    font: 700 5rem 'Nunito', sans-serif;
+    letter-spacing: 0.75rem;
+    padding: 0.625rem 0 2.188rem 0;
+}
+.backgroundIndex a i {
+    color: #2d3836;
+    font-size: 5rem;
+}
+.backgroundIndex a:hover i {
+    color: #eff48e;
+}
+
+/*********INDEX RESPONSIVE*******/
+
+@media only screen and (max-width: 767px) {
+    .backgroundIndex h2 {
+        font-size: 1.625rem;
+    }
+    .backgroundIndex h3 {
+        font-size: 4.063rem;
+    }
+}
+@media only screen and (min-width: 577px) {
+    #bodyIndex {
+        background:url("../img/ixtapa2.jpg");
+    }
+}
+@media only screen and (max-width: 767px) and (max-height: 415px) {
+    #bodyIndex {
+        background:url("../img/ixtapa3.jpg");
+    }
+}
+@media only screen and (min-width: 992px) and (min-height: 720px) {
+    #bodyIndex {
+        background:url("../img/ixtapa4.jpg");
+    }   
+}
+@media only screen and (min-width: 767px) and (min-height: 769px) {
+    #bodyIndex {
+        background:url("../img/ixtapa5.jpg");
+    }   
+}
+@media only screen and (min-height: 813px) {
+    #bodyIndex {
+        background:url("../img/ixtapa6.png");
+        background-repeat: no-repeat;
+    }   
+}
+@media only screen and (min-height: 1025px) {
+    #bodyIndex {
+        background:url("../img/ixtapa7.png");
+        background-repeat: no-repeat;
+    }   
+}
+
+/***************************************
+**************ALOJAMIENTO***************
+***************************************/
+
+.alojamiento {
+    margin: 3% 0 8% 0;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 5%;
+}
+.tresEstrellas {
+    grid-template-rows: repeat(2, 1fr);
+}
+.alojamiento h4 {
+    padding-top: 1rem;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .alojamiento {
+        margin-top: 3%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+    .tresEstrellas {
+        grid-template-rows: repeat(3, 1fr);
+        margin-bottom: 15%;
+    }
+}
+@media (max-width: 767px) {
+    .alojamiento {
+        margin: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10, 1fr);
+        grid-row-gap: 1%;
+    }
+    .tresEstrellas {
+        grid-template-rows: repeat(6, 1fr);
+        margin-bottom: 25%;
+    }
+    h2 {
+        margin: 1rem 0 2rem 0 ;
+    }
+}
+
+
+/***********************************
+**************PLAYAS****************
+***********************************/
+
+.textPlayas {
+    margin-top: 6.25rem;
+    font-size: 1.25rem;
+}
+
+@media (max-width: 767px) {
+    .textPlayas {
+       font-size: 1rem;
+    }
+}
+.playas {
+    margin-top:5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-row-gap: 7%;
+    justify-items: center;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .playas {
+        margin-bottom: 5%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+}
+@media (max-width: 767px) {
+    .playas {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(14, 1fr);
+        grid-row-gap: 1%;
+    }
+}
+
+
+/***************************************
+**************ACTIVIDADES***************
+***************************************/
+
+.carousel-item {
+    height: 65vh;
+    min-height: 350px;
+    width: 60%;
+    margin-left: 20%;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+.actividades h2 {
+    margin-top: 6.25rem;
+    margin-bottom: 0.625rem;
+}
+.actividades h3 {
+    color: #eff48e;
+    font: 700 2.5rem 'Nunito', sans-serif;
+    text-transform: uppercase;
+}
+.actividades p {
+    color: #2d3836;
+    font: 700 1.125rem 'Nunito', sans-serif;
+    letter-spacing: 0.044rem;
+}
+.carouselActividades {
+    margin-bottom: 4.375rem;
+}
+@media (max-width: 767px) {
+    .carousel-item {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+/***********************************
+***********GASTRONOMIA*************
+***********************************/
+
+.gastronomia {
+    margin: 4.375rem 0 11.25rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 5%;
+    justify-items: center;
+}
+.gastronomia div {
+    border: solid 0.125rem #eff48e;
+    width: 250px;
+}
+.gastronomia h3 {
+    padding-top: 0.938rem;
+}
+.gastronomia img {
+    padding: 1.875rem 0 0.625rem 0;
+}
+.gastronomiaDos {
+    padding-top: 0;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .gastronomia {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 767px) {
+    .gastronomia {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(13, 1fr);
+        grid-row-gap: 1%;
+        margin-bottom: 13.75rem;
+    }
+    .gastronomia div {
+        width: 300px;
+    }
+}
+
+/****************************************
+****************CONTACTO*****************
+****************************************/
+
+.contacto {
+    margin: 6.25rem 0;
+    color: #eff48e;
+    font: 1rem 'Nunito', sans-serif;
+}
+.comentario {
+    padding-right: 0;
+    padding-left: 0;
+}
+.contacto h3 {
+    margin-bottom: 1.875rem;
+}
+form {
+    border: solid 0.188rem #eff48e;
+    padding: 1.25rem;
+}
+#conocesIxtapa {
+    padding: 1.875rem 0;
+}
+#newsletter {
+    padding: 0.625rem 0 0.938rem 0.938rem;
+} 
+.form-control-plaintext {
+    display: inline-block;
+    color: #2ec1ac;
+}
+
+.btn-luna {
+    color: #2ec1ac;
+    border-color: #2ec1ac;
+}
+.btn-luna:hover {
+    color: #2d3836;
+    background-color: #2ec1ac;
+    font-weight: 600;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+    .contacto {
+        margin: 2rem 0;
+        font-size: 0.875;
+    }
+}
+
+/****************************************
+*****************GRACIAS*****************
+****************************************/
+
+.gracias{
+    padding: 6.25rem 1rem;
+}
+@media screen and (max-height: 415px) {
+    .gracias {
+        padding: 1rem;
+    }
+}
+
+/****************************************
+*****************COVID*****************
+****************************************/
+
+.covid h2 {
+    margin-bottom: 1.563rem;
+    font-size: 2.5rem;
+    width: 80%;
+}
+.covid ul {
+    width: 60%;
+}
+.covid ul li {
+    color: #eff48e;
+    font: 300 1.125rem 'Nunito', sans-serif;
+    line-height: 1.875rem;
+    letter-spacing: 0.031rem;
+    padding-bottom: 1.25rem;
+}
+@media screen and (max-width: 767px) {
+    .covid h2 {
+        font-size: 1.25rem;
+        width: 90%;
+    }
+    .covid ul {
+        width: 80%;
+    }
+}
+/****************************************
+*****************FOOTER******************
+****************************************/
+#sticky-footer {
+    flex-shrink: none;
+  }
+#footerCopyright {
+    background-color: #2d3836;
+  }
+.footerOne {
+    background-color: #2ec1ac;
+}
+.footerOne ul {
+    margin-bottom: 0;
+}
+#socialIcons i {
+    font-size: 1.625rem;
+}
+#socialIcons ul {
+    margin-top:0.40rem;
+}
+#extraMenu ul li a {
+    font-size: 1.125rem;
+}
+#mailIcon {
+    font-size: 1.5rem;
+    margin-right: 0.75rem;
+}
+#globeIcon {
+    font-size: 1.75rem;
+    margin-right: 0.75rem;
+}
+#footerCopyright p {
+    font-size: 0.688rem;
+    padding-top: 0.313rem;
+    margin-bottom: 0;
+}
+@media only screen and (max-width: 767px) {
+    #extraMenu li {
+        padding-top: 0.625rem;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #socialIcons ul {
+        margin-top:0.938rem;
+    }
+}
+@media only screen and (min-width: 992px) {
+    #extraMenu li {
+        padding-left: 6rem;
+    }
+}

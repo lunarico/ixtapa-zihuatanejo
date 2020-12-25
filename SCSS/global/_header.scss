@@ -1,0 +1,15 @@
+header {
+    background-color: $turquoise;
+    position: sticky;
+    top:0;
+    z-index: 2;
+
+    & .header__titulo {
+        @include titulo ($dark-blue, $font__logo, 0.063rem, 0, 0)
+    }
+    & .header__logo {
+        margin-left: 3%;
+        margin-top: 0.125rem;
+        padding: 0;
+    }
+}
