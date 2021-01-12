@@ -34,3 +34,9 @@
         transform: translate(2px, 2px);
     }
 }
+
+.titulo__cuatro-tres-estrellas {
+    @media (max-width: 767px) {
+    margin-top: 0;
+}
+}

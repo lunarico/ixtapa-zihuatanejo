@@ -63,7 +63,7 @@ h2 {
 }
 
 h3 {
-    @include titulo ($summer-green, $font__pages--subtitulo, 0.063rem, 0, 0);
+    @include titulo ($summer-green, $font__pages--subtitulo, 0.063rem, 1rem, 0.5rem);
     text-align: center;
     text-transform: uppercase;
 }
