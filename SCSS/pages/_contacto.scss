@@ -29,15 +29,6 @@
         & .form-control-plaintext {
             display: inline-block;
         }
-        & .btn-ixtapa {
-            color: $light-green;
-            border-color: $turquoise;
-            &:hover {
-            background-color: $turquoise;
-            color: $dark-blue;
-            font-weight: 600;
-            }
-        }
     }
     & .form-control-plaintext {
         color: $light-green;

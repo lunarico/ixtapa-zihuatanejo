@@ -6,7 +6,7 @@
     background-color: $turquoise;
 
     & .footer__social-icons {
-        margin-top: 0.40rem;
+        margin-top: 0.45rem;
 
         @media only screen and (min-width: 768px) and (max-width: 992px) {
             margin-top: 0;
@@ -25,6 +25,8 @@
 }
 
 .footer__nav {
+    margin-top: 0.06rem;
+    
 	ul {
 		li {
             @media only screen and (max-width: 767px) {

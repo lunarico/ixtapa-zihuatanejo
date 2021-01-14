@@ -54,11 +54,11 @@ h4 {
 }
 
 h2 {
-    @include titulo ($summer-green, $font__pages--titulo, 0.313rem, 6.25rem, 2.5rem);
+    @include titulo ($summer-green, $font__pages--titulo, 0.313rem, 3.125rem, 2.5rem);
 
     @media (max-width: 767px) {
         font-size: 2.813rem;
-        margin: 5rem 0 2rem 0 ;
+        margin: 2.5rem 0 2rem 0 ;
     }
 }
 
@@ -66,4 +66,19 @@ h3 {
     @include titulo ($summer-green, $font__pages--subtitulo, 0.063rem, 1rem, 0.5rem);
     text-align: center;
     text-transform: uppercase;
+}
+
+.btn-ixtapa {
+    color: $light-green;
+    border-color: $turquoise;
+    font: $font__pages--button;
+    margin-bottom: 0.5rem;
+    &:hover {
+        background-color: $turquoise;
+        color: $dark-blue;
+        font-weight: 600;
+    }
+    &:focus {
+        box-shadow: none;
+    }
 }
