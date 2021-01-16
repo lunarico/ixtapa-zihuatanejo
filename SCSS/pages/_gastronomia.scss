@@ -1,4 +1,4 @@
-.galeria__gastronomia {
+.gastronomia__galeria {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -23,7 +23,7 @@
         border: solid 0.125rem $light-green;
 
         @media (min-width:492px) and (max-width: 767px) {
-            width: 70%;
+            width: $medida-total/2+20;
         }
         img {
             padding: 0.5rem 0;

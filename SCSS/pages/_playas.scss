@@ -1,4 +1,4 @@
-.text__playas {
+.playas__text {
   margin-top: 6.25rem;
 
   @media (min-width: 768px) {
@@ -6,7 +6,7 @@
   }
 }
 
-.galeria__playas {
+.playas__galeria {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);

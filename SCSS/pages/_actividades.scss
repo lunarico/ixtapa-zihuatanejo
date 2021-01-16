@@ -22,7 +22,7 @@
             }
             img {
                 @media (max-width: 768px) {
-                    width: 100%;
+                    width: $medida-total;
                 }
             }
             & .carousel-caption {
@@ -34,8 +34,8 @@
                 padding: 5px 10px;
         
                 @media (max-width: 992px) {
-                    left: 5%;
-                    right: 5%;
+                    left: $medida-total/20;
+                    right: $medida-total/20;
                 }
                 @media (max-width: 768px) {
                     left: 0;
@@ -47,11 +47,11 @@
             }  
             & .carousel-control-prev {
                 margin-left: 0;
-                width: 5%;
+                width: $medida-total/20;
             }
             & .carousel-control-next {
                 margin-right: 0;
-                width: 5%;
+                width: $medida-total/20;
               }
         }
     }
