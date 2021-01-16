@@ -1,63 +1,61 @@
-.galeria__actividades {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 5%;
-    margin-top: 1rem;
-    text-align: center;
-    justify-items: center;
+.actividades {
+    & .actividades__titulo {
+        margin-top: 6.25rem;
 
-    @media (min-width: 768px) and (max-width: 1024px) {
-        grid-template-columns: repeat(2, 1fr);
-        margin-top: 3.125rem;
-    }
-    @media (max-width: 767px) {
-        grid-template-columns: 1fr;
-        grid-row-gap: 0.5%;
-    }
-
-    div {
-        width: 350px;
-
-        img {
-            padding: 1.875rem 0;;
-
-            @media (max-width: 767px) {
-                margin-bottom: 0;
-                padding: 1rem 0;
+        &.actividades__titulo-nat-y-cul {
+            @media (max-width: 768px) {
+            margin-top: 4.25rem;
             }
         }
     }
-    &.galeria__actividades--aventura {
-        grid-template-rows: repeat(2, 1fr);
-        margin-bottom: 7.5rem;
+    & .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
 
-        @media (min-width: 768px) and (max-width: 1024px) {
-            grid-template-rows: repeat(3, 1fr);
-            margin-bottom: 15.625rem;
-        }
-        @media (max-width: 767px) {
-            grid-template-rows: repeat(6, 1fr);
-            margin-bottom: 7.5rem;
+        & .carousel {
+            padding-left: 0;
+            padding-right: 0;
+            position: relative;
+        
+            ol {
+                margin-bottom: 0;
+            }
+            img {
+                @media (max-width: 768px) {
+                    width: 100%;
+                }
+            }
+            & .carousel-caption {
+                background: rgba(0,0,0,0.8);
+                bottom: 0;
+                left: 13%;
+                right:13%;
+                position: absolute;
+                padding: 5px 10px;
+        
+                @media (max-width: 992px) {
+                    left: 5%;
+                    right: 5%;
+                }
+                @media (max-width: 768px) {
+                    left: 0;
+                    right: 0;
+                }
+                    h3 {
+                        margin-top: 0;
+                    }
+            }  
+            & .carousel-control-prev {
+                margin-left: 0;
+                width: 5%;
+            }
+            & .carousel-control-next {
+                margin-right: 0;
+                width: 5%;
+              }
         }
     }
-    &.galeria__actividades--natycul {
-        grid-template-rows: 1fr;
-        margin-bottom: 3.125rem;
-
-        @media (min-width: 768px) and (max-width: 1024px) {
-            margin-bottom: 8.125rem;
-        }
-        @media (max-width: 767px) {
-            grid-template-rows: repeat(3, 1fr);
-            margin-bottom: 4.5rem;
-        }
+    & .actividades-cultural__carousel {
+        margin-bottom: 3.75rem;
     }
-}
-
-.titulo__actividades-cultural{
-margin-top: 3.875rem;
-}
-
-#costaGrande {
-    padding-top: 0;
 }
