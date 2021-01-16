@@ -22,6 +22,9 @@
     div {
         border: solid 0.125rem $light-green;
 
+        @media (min-width:492px) and (max-width: 767px) {
+            width: 70%;
+        }
         img {
             padding: 0.5rem 0;
         }
